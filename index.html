@@ -1,12 +1,44 @@
-<! DOCTYPE html>
-<htm>
+<!DOCTYPE html>
+<html>
 <head>
-<title>Dynamic Webpage</title>
-<script>
-function changeContent)
-var text = document.getElementByld(" demo");
-text.innerHTML = "Welcome! The content has changed.";
-text.style.color = "blue";
+<title>CSS Grid Layout</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
 }
-</script>
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+</style>
+
 </head>
+
+<body>
+
+<h2 style="text-align:center;">Responsive Grid Layout</h2>
+
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+</div>
+
+</body>
+</html>
